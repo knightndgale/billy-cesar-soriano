@@ -1,12 +1,16 @@
-# Billy Portfolio Static Site
+# Billy Cesar Soriano Portfolio
 
-This is a no-build static portfolio site ready for Vercel.
+This is a no-build static portfolio site for Vercel. The deployed site is served directly from `index.html` in the repository root.
 
-## Deploy
+## Vercel Settings
 
-- Set the Vercel project root to `billy-portfolio-site/`.
-- No build command is required.
-- The output directory is the project root.
+- Framework preset: `Other`
+- Root directory: repository root
+- Build command: leave empty
+- Output directory: leave empty
+- Install command: leave empty
+
+If this repository is later moved into a monorepo, set the root directory to the folder that contains `index.html`.
 
 ## Files
 
@@ -14,3 +18,4 @@ This is a no-build static portfolio site ready for Vercel.
 - `styles.css` contains the full responsive UI.
 - `script.js` handles active navigation and the image lightbox.
 - `assets/` contains optimized portfolio visuals and the downloadable PDF.
+- `vercel.json` keeps static asset caching and root routing explicit for Vercel.
